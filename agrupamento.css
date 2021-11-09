@@ -1,0 +1,17 @@
+h1, p {
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+li:hover {
+    background-color: lightseagreen;
+    transition: 1s;
+}
+
+li:active {
+    color: gold;
+    transition: 10ms;
+}
