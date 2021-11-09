@@ -1,0 +1,47 @@
+div:hover {
+    border-style: solid;
+}
+
+div:nth-child(3) {
+    background-color: brown;
+}
+
+div:nth-child(3) > h3 {
+    color: floralwhite;
+    font-style: italic;
+}
+
+div:nth-child(4) {
+    background-color:peru;
+}
+
+div:nth-child(4) > h3 {
+    color: floralwhite;
+}
+
+div:nth-child(5) {
+    background-color: cadetblue;   
+}
+
+div:nth-child(5) > h3 {
+    color: floralwhite;
+    font-style: italic;
+    height: 2em;
+}
+
+div:nth-child(6) {
+    background-color: black;
+}
+
+div:nth-child(6) > h3:hover {
+    color: floralwhite;
+}
+
+div:nth-child(7) {
+    background-color: azure;
+}
+
+div:nth-child(7) > h3:hover {
+    color: floralwhite;
+    font-style: italic;
+}
