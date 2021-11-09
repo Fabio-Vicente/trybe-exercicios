@@ -1,0 +1,61 @@
+ol {
+    background-color: yellow;
+}
+
+ol li:nth-child(even) {
+    color: darkgreen;
+}
+
+ol li:nth-child(odd) {
+    text-transform: uppercase;
+}
+
+h1, h2, h3 {
+    color: crimson;
+}
+
+h1 em, h2 em, h3 em {
+    font-size: 40px;
+    border: solid 1px black;
+}
+
+li {
+    font-size: 20px;
+}
+
+li em {
+    font-weight: bold;
+}
+
+#linguagens li:not(:nth-child(n+4)) {
+    color: darkblue;
+}
+
+.rosa {
+    background-color: blueviolet;
+}
+
+#aliados li:nth-child(1) a:hover {
+    font-weight: bold;
+    color: coral;
+}
+
+#aliados li:nth-child(2) a:hover {
+    font-weight: bold;
+    color: lime;
+}
+
+#aliados li:nth-child(3) a:hover {
+    font-weight: bold;
+    color: black;
+}
+
+#aliados li:nth-child(4) a:hover {
+    font-weight: bold;
+    color: yellow;
+}
+
+#aliados li:nth-child(5) a:hover {
+    font-weight: bold;
+    color: mediumseagreen;
+}
