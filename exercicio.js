@@ -66,15 +66,55 @@ for (let i = 0; i < numbers.length; i++) {
 console.log(minor);
 
 //8
-array = [];
+count = [];
 
 for (let i = 1; i <= 25; i++) {
-    array.push(i);
+    count.push(i);
 };
 
-console.log(array);
+console.log(count);
 
 //9
-for (const element of array) {
+for (const element of count) {
     console.log(element/2);
 };
+
+//Bônus
+
+//1. Ordem crescente
+for (let i = 0; i < numbers.length; i++) {
+    for (let j = 0; j < numbers.length - i - 1; j++) {
+        if (numbers[j]>numbers[j + 1]) {
+            const aux = numbers[j];
+            numbers[j] = numbers[j + 1];
+            numbers[j + 1] = aux;
+        };
+    };
+};
+
+console.log(numbers);
+
+//2. Ordem decrescente
+for (let i = 0; i < numbers.length; i++) {
+    for (let j = 0; j < numbers.length - i - 1; j++) {
+        if (numbers[j]<numbers[j + 1]) {
+            const aux = numbers[j];
+            numbers[j] = numbers[j + 1];
+            numbers[j + 1] = aux;
+        };
+    };
+};
+
+console.log(numbers);
+
+//3. Multiplicação pelo sucessor
+numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+
+let mult = [];
+
+for (let i = 0; i < numbers.length - 1; i++) {
+    mult.push(numbers[i]*numbers[i + 1]);
+}
+mult.push(numbers[numbers.length-1]*2);
+
+console.log(mult);
