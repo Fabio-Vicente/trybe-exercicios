@@ -1,0 +1,4 @@
+1. Crie uma variável e attribui o valor do primeiro elemento do array;
+2. Para cada elemento do array, verifique se ele é menor do que a variável criada;
+3. Caso afirmativo, atribua o valor desse elemento à variável;
+4. Ao final da verificação, imprima o valor da variável em tela.

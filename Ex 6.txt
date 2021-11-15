@@ -1,0 +1,6 @@
+1. Crie uma nova variável e atribua o valor de 0 a ela;
+2. Para cada elemento do vetor, verifique se a sua divisão por dois resulta em um valor igual a 1;
+3. Caso afirmativo, incremente o valor da variável em 1;
+4. Ao final da verificação, verifique se a variável tem um valor diferente de zero;
+5. Caso afirmativo. imprima o seu valor;
+6. Caso contrário, imprima "nenhum valor ímpar encontrado".

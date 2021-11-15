@@ -1,0 +1,3 @@
+1. Inicie a variável de soma com o valor igual a zero;
+2. Para cada elemento do array, incremente o seu valor ao valor da variável de soma;
+3. Imprima a variável de soma.

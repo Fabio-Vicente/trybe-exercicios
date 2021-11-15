@@ -1,0 +1,1 @@
+1. Para cada elemento do array, imprima o seu valor correspondente.

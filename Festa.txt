@@ -1,0 +1,13 @@
+Como se vestir para uma festa:
+
+- 1. Escolher uma calça;
+- 2. Escolher uma camisa;
+- 3. Vestir a calça;
+- 4. Vestir a camisa;
+- 5. Olhar no espelho;
+- 6. Se a vestimenta não estiver de agrado, repetir do passo 1 ao 5;
+- 7. Pentear o cabelo;
+- 8. Passar perfume;
+- 9. Calcar os sapatos;
+- 10. Se sapatos não combinarem com a roupa, repetir o passo 9;
+- 11. Fim.

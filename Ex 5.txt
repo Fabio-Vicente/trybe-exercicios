@@ -1,0 +1,4 @@
+1. Crie uma nova variável cujo valor seja igual ao valor do primeiro elemento do array;
+2. Para cada elemento do array, a partir do segundo, verifique se ele é maior do que a variável criada;
+3. Caso afirmativo, substitua o valor dessa variável pelo respectivo valor do elemento verificado;
+4. Ao final das verificações, imprima o valor atribuido à variável criada.

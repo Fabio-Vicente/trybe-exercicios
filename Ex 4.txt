@@ -1,0 +1,3 @@
+1. Com a média do exercício anterior, verifique se seu valor é maior que 20;
+2. Caso afirmativo, imprima "valor maior do que 20";
+3. Caso negativo, imprima "valor menor ou igual a 20".
