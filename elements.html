@@ -18,5 +18,11 @@
     let atencao = reference.nextSibling;
     thirdChild = reference.nextElementSibling;
     thirdChild = pai.children[2];
+    pai.appendChild(document.createElement('section'));
+    reference.appendChild(document.createElement('section'));
+    primeiroFilhoDoFilho.appendChild(document.createElement('section'));
+    let grandson = primeiroFilhoDoFilho.firstElementChild;
+    thirdChild = grandson.parentElement.parentElement.nextElementSibling;
+    console.log(thirdChild);
   </script>
 </main>
