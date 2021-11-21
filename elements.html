@@ -23,6 +23,22 @@
     primeiroFilhoDoFilho.appendChild(document.createElement('section'));
     let grandson = primeiroFilhoDoFilho.firstElementChild;
     thirdChild = grandson.parentElement.parentElement.nextElementSibling;
-    console.log(thirdChild);
+    removeChilds(paiDoPai, [paiDoPai, pai, elementoOndeVoceEsta, primeiroFilhoDoFilho]);
+    console.log(paiDoPai);
+    function removeChilds(node, excepts) {
+      let except = false
+      for (let i = node.children.length - 1; i >= 0; i -= 1) {
+        removeChilds(node.children[i], excepts);
+      }
+      for (let i = 0; i < excepts.length; i += 1) {
+        if (node === excepts[i]) {
+          except = true;
+          break;
+        }
+      }
+      if (!except) {
+        node.parentElement.removeChild(node);
+      }
+    }
   </script>
 </main>
