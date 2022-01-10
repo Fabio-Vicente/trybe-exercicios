@@ -49,6 +49,15 @@ html {
       nav ul {
         font-size: xx-large;
       }
+  }
 
-      
+  @media screen and (min-width: 1024px){
+      body {
+          margin: 86px 72px;
+      }
+
+      nav ul {
+          font-size: x-large;
+          margin: 0 30%;
+      }
   }
