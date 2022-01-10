@@ -1,0 +1,27 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+      margin: auto 20px;
+  }
+
+  header p {
+      font-size: x-large;
+      text-align: center;
+  }
+
+  nav ul {
+      display: flex;
+      justify-content: space-around;
+      list-style-type: none;
+      padding: 0;
+  }
+
+  aside ul {
+      list-style: none;
+  }
