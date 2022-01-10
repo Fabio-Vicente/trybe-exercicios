@@ -10,6 +10,10 @@ html {
       margin: auto 20px;
   }
 
+  h1 {
+      font-size: large;
+  }
+
   header p {
       font-size: x-large;
       text-align: center;
@@ -24,4 +28,27 @@ html {
 
   aside ul {
       list-style: none;
+  }
+
+  @media screen and (min-width: 768px) {
+      body {
+          margin: 64px 52px;
+          font-size: x-large;
+          line-height: 36px;
+      }
+
+      h1 {
+          font-size: xx-large;
+      }
+
+      header p {
+          font-size: xxx-large;
+          font-weight: 600;
+      }
+
+      nav ul {
+        font-size: xx-large;
+      }
+
+      
   }
