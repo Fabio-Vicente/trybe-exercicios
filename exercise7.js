@@ -68,7 +68,5 @@ function authorUnique() {
     books.forEach((current, index, array) => {
         find += array.some((book, id) => index !== id ? book.author.birthYear === current.author.birthYear : false);
     })
-    return !!find;
+    return !find;
 }
-
-console.log(authorUnique());
