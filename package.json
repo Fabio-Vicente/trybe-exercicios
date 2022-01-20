@@ -1,0 +1,23 @@
+{
+  "name": "trybe-exercicios",
+  "version": "1.0.0",
+  "description": "Este repositório contém todas as atividades de aprendizagem desenvolvidas por _[Fábio Vicente](https://www.linkedin.com/in/fabio-vicente/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:",
+  "main": "async.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fabio-Vicente/trybe-exercicios.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fabio-Vicente/trybe-exercicios/issues"
+  },
+  "homepage": "https://github.com/Fabio-Vicente/trybe-exercicios#readme",
+  "devDependencies": {
+    "jest": "^27.4.7"
+  }
+}
