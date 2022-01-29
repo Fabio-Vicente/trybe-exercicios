@@ -11,7 +11,7 @@ const compromissos = ['estudar', 'fazer atividades', 'fazer projetos'];
 function App() {
   return (
     <div>
-      {[compromissos.map(compromisso => Task(compromisso))]}
+      {compromissos.map(compromisso => Task(compromisso))}
     </div>
   );
 }
