@@ -1,0 +1,12 @@
+.App {
+  display: flex;
+}
+
+.Pokemon {
+  border-style: groove;
+}
+
+.Pokemon span{
+  display: block;
+  line-height: 1.5em;
+}
