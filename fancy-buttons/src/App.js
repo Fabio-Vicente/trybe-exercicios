@@ -28,8 +28,11 @@ class App extends React.Component {
     console.log('Clicou no botão!');
     this.setState((prev, _props) => ({
       clicks1: prev.clicks1 + 1,
-    }))
-
+    }), () => {
+      if (!(this.state.clicks1 % 2)) {
+        console.log('Verde');
+      }
+    });
   }
   
   handleClick2() {
@@ -49,7 +52,7 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <button onClick={this.handleClick}>Meu botão</button>
+        <button onClick={() => this.handleClick()}>Meu botão</button>
         <button onClick={this.handleClick2}>Meu botão 2</button>
         <button onClick={this.handleClick3}>Meu botão 3</button>
       </>
