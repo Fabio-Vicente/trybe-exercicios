@@ -14,21 +14,36 @@ class App extends React.Component {
 
   constructor() {
     super();
+    this.state = {
+      clicks1: 0,
+      clicks2: 0,
+      clicks3: 0,
+    }
     this.handleClick = this.handleClick.bind(this);
     this.handleClick2 = this.handleClick2.bind(this);
     this.handleClick3 = this.handleClick3.bind(this);
   }
 
   handleClick() {
-    console.log('Clicou no botão!')
+    console.log('Clicou no botão!');
+    this.setState((prev, _props) => ({
+      clicks1: prev.clicks1 + 1,
+    }))
+
   }
   
   handleClick2() {
-    console.log('Clicou no botão 2!')
+    console.log('Clicou no botão 2!');
+    this.setState((prev, _props) => ({
+      clicks2: prev.clicks2 + 1,
+    }))
   }
   
   handleClick3() {
-    console.log('Clicou no botão 3!')
+    console.log('Clicou no botão 3!');
+    this.setState((prev, _props) => ({
+      clicks3: prev.clicks3 + 1,
+    }))
   }
 
   render() {
