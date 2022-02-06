@@ -54,10 +54,16 @@ class Form extends Component {
         }
     }
     submitForm(event) {
+        const {email} = this.state;
+        const regexEmail = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9.-]+(\.com$)/;
         event.preventDefault();
-        this.setState({
-            submit: true,
-        });
+        if (regexEmail.test(email)) {
+            this.setState({
+                submit: true,
+            });
+        } else {
+            alert('Preencher o e-mail em formato válido')
+        }
     }
     clearForm() {
         this.setState({
