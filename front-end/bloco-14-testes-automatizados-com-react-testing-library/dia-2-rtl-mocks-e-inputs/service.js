@@ -1,13 +1,15 @@
 const createAleatoryNumber = () =>
     Math.floor(Math.random() * 100) + 1;
 
-const toUpperCase = (string) => 
-    String.toUpperCase(string);
+const toUpperCase = (string) => String.toUpperCase(string);
 
-const firstCharacter = (string) =>
-    string[0];
+const firstCharacter = (string) => string[0];
 
-const concatThreeStrings = (string1, string2, string3) =>
-    string1 + string2 + string3;
+const concatTwoStrings = (string1, string2) => string1 + string2;
 
-module.exports = { createAleatoryNumber, toUpperCase };
+module.exports = {
+    createAleatoryNumber,
+    toUpperCase,
+    firstCharacter,
+    concatTwoStrings,
+};
