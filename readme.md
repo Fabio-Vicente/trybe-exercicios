@@ -107,7 +107,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 
 ##### Bloco 14: Testes em React
 
-- [ ] 14-1: _Testando React com a React Testing Library_
+- [X] 14-1: _RTL - Primeiros Passos_
 - [ ] 14-2: _Testando React com a React Testing Library - Parte 2_
 - [ ] 14-3: _[Projeto - Testes em React]()_
 
