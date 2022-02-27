@@ -64,4 +64,9 @@ describe('Testa as funções `toUpperCase`, `firstCharacter` e `concatThreeStrin
     const concatString = concatTwoStrings('S', 'tri', 'ng');
     expect(concatString).toBe('String');
   })
+  test('Restaurando a implementação original da função `toUpperCase` e realizando seus testes', () => {
+    toUpperCase.mockRestore();
+    const upperCaseString = service.toUpperCase('String');
+    expect(upperCaseString).toBe('STRING');
+  })
 })

@@ -1,7 +1,7 @@
 const createAleatoryNumber = () =>
     Math.floor(Math.random() * 100) + 1;
 
-const toUpperCase = (string) => String.toUpperCase(string);
+const toUpperCase = (string) => string.toUpperCase();
 
 const firstCharacter = (string) => string[0];
 
