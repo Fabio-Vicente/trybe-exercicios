@@ -14,6 +14,15 @@ describe('Testa a função `createAleatoryNumer', () => {
     expect(createAleatoryNumber).toHaveBeenCalled();
     expect(createAleatoryNumber).toHaveBeenCalledTimes(1);
     expect(aleatoryNumber).toBe(10);
-    createAleatoryNumber.mockRestore();
+    createAleatoryNumber.mockClear();
+  })
+  test('Realizando um mock com a implementação de divisão de dois números', () => {
+    const { createAleatoryNumber } = service;
+    createAleatoryNumber.mockImplementation((number1, number2) => number1 / number2);
+    const divisionResult = createAleatoryNumber(4, 2);
+    expect(createAleatoryNumber).toHaveBeenCalled();
+    expect(divisionResult).toBe(2);
+    expect(createAleatoryNumber).toHaveBeenCalledTimes(1);
+    createAleatoryNumber.mockClear();
   })
 })
