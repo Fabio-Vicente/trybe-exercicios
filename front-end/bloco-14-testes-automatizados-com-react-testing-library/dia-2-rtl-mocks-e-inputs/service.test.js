@@ -70,3 +70,19 @@ describe('Testa as funções `toUpperCase`, `firstCharacter` e `concatThreeStrin
     expect(upperCaseString).toBe('STRING');
   })
 })
+
+describe('Testa a função `fetchDog`', () => {
+  jest.spyOn(service, 'fetchDog');
+
+  beforeEach(() => service.fetchDog.mockReset());
+
+  test('Verifica se a resolução da requisição mockada retorna a string `resquest sucess`', async () => {
+    service.fetchDog.mockResolvedValue('request sucess');
+    expect(service.fetchDog()).resolves.toBe('request sucess');
+  });
+  
+  test('Verifica se a exceção da requisição mockada retorna a string `request failed`', () => {
+    service.fetchDog.mockRejectedValue('request failed');
+    expect(service.fetchDog()).rejects.toBe('request failed');
+  })
+})
