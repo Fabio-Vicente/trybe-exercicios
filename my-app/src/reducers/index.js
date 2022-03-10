@@ -1,13 +1,9 @@
-// src/reducers/index.js
-const INITIAL_STATE = [];
 
-function listReducer(state = INITIAL_STATE, action) {
-  switch(action.type) {
-    case 'ADD_ELEMENT':
-      return [...state, action.value];
-    default:
-      return state;
-  }
-}
+// reducers/index.js
 
-export default listReducer;
+import { combineReducers } from 'redux';
+import myReducer from './myReducer';
+
+const rootReducer = combineReducers({ myReducer });
+
+export default rootReducer;

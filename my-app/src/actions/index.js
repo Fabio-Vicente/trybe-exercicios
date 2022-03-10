@@ -1,4 +1,3 @@
-// src/actions/index.js
-const addAssignment = (value) => ({ type: 'ADD_ELEMENT', value });
+//actions.js
 
-export default addAssignment;
+export const newAction = (state) => ({ type: 'NEW_ACTION', state });
