@@ -15,9 +15,9 @@ class CustomerRegister extends Component {
   }
 
   handleSubmit(submit) {
-    const { addCustomer } = this.props;
+    const { addCustomer: addCustomerToStore } = this.props;
     submit.preventDefault();
-    addCustomer({ ...this.state });
+    addCustomerToStore({ ...this.state });
   }
 
   render() {
