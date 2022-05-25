@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  web:
+    image: ghost:1-alpine
+    ports:
+      - 2368:2368
+    networks:
+      - my-network
+    environment:
+      database__client: mysql
+      database__connection__database: ghost
+      database__connection__host: db
+      database__connection__user: root
+      database__connection__password: password
+    depends_on:
+      - db
+  db:
+    image: mysql:5.7
+    volumes:
+      - dbdata:/var/lib/mysql
+    networks:
+      - my-network
+    environment:
+     MYSQL_ROOT_PASSWORD: password
+
+volumes:
+  dbdata:
+
+networks:
+  my-network:
+
