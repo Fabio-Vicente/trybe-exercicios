@@ -1,0 +1,1 @@
+SELECT 'Fábio' AS first_name, 'Vicente' AS last_name, 'Salvador' AS birth_city, 28 AS age;
