@@ -1,0 +1,1 @@
+SELECT COUNT(email) FROM sakila.staff;
