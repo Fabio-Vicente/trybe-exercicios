@@ -1,0 +1,1 @@
+SELECT COUNT(password) FROM sakila.staff;
