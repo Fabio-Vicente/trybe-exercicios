@@ -148,7 +148,7 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda i
 ##### Bloco 20: Bancos de dados relacionais
 
 - [X] 20-1: _Banco de dados SQL_
-- [ ] 20-2: _Descomplicando JOINs e UNIONs_
+- [X] 20-2: _Descomplicando JOINs e UNIONs_
 - [ ] 20-3: _Stored Routines & Subqueries_
 - [ ] 20-4: _[Projeto - Vocabulary Booster]()_
 
